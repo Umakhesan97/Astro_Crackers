@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useCart } from "../context/CartContext";
+import logo from "../assets/Astro_crackers_logo.jpg";
 
 export default function ProductCard({ item }) {
   const { addToCart } = useCart();
@@ -26,12 +27,23 @@ export default function ProductCard({ item }) {
       </span>
 
       {/* Image */}
+
       <div
+  className="w-100 d-flex align-items-center justify-content-center bg-light rounded mb-3"
+  style={{ height: "130px" }}
+>
+  <img
+    src={logo}
+    alt="Astro Crackers Logo"
+    style={{ maxHeight: "100%", objectFit: "contain" }}
+  />
+</div>
+      {/* <div
         className="w-100 d-flex align-items-center justify-content-center bg-light rounded mb-3"
         style={{ height: "130px" }}
       >
         <span className="text-muted small">Image</span>
-      </div>
+      </div> */}
 
       {/* Product Info */}
       <h3 className="fw-semibold text-center" style={{ fontSize: "16px" }}>

@@ -18,25 +18,26 @@ export default function About() {
 
         {/* Right Side Map */}
         <div className="col-md-6">
-          <div className="mb-2" style={{ height: "300px", width: "100%" }}>
-            <iframe
-              title="Our Location"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3911.123456!2d77.921234!3d9.431234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b03123456789abc%3A0xabcdef1234567890!2sSouth%20Car%20Street%2C%20Sivakasi%2C%20Tamil%20Nadu%2C%20India!5e0!3m2!1sen!2sin!4v1693550000000"
-              width="100%"
-              height="100%"
-              style={{ border: 0, borderRadius: "10px" }}
-              allowFullScreen=""
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </div>
-          <div className="text-end">
-            <p>
-              📍 Our Address:<br />
-              South Car Street, Sivakasi, Tamil Nadu, India
-            </p>
-          </div>
-        </div>
+  <div className="mb-2" style={{ height: "300px", width: "100%" }}>
+    <iframe
+      title="Our Location"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3911.123456!2d77.921234!3d9.431234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b03123456789abc%3A0xabcdef1234567890!2s3%2F57%20A16%2C%20Anaiyur%20Post%2C%20Sivakasi%2C%20Tamil%20Nadu%2C%20India!5e0!3m2!1sen!2sin!4v1693550000000"
+      width="100%"
+      height="100%"
+      style={{ border: 0, borderRadius: "10px" }}
+      allowFullScreen=""
+      loading="lazy"
+      referrerPolicy="no-referrer-when-downgrade"
+    ></iframe>
+  </div>
+  <div className="text-end">
+    <p>
+      📍 Our Address:<br />
+      3/57 A16, Anaiyur Post, Sivakasi, Tamil Nadu, India
+    </p>
+  </div>
+</div>
+
       </div>
     </div>
   );
