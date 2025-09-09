@@ -9,13 +9,10 @@ export default function About() {
         <div className="col-md-6 d-flex flex-column justify-content-center">
           <h3>Our Expertise</h3>
           <p>
-            We have several years of experience in the crackers field. Born in Sivakasi, 
-            we are committed to delivering high-quality, eco-friendly crackers for all festivals. 
-            Our products are safe, colorful, and designed to bring joy to every celebration.
+            With years of experience in the fireworks industry, Astro Crackers has become a trusted name for premium-quality crackers in Sivakasi. We specialize in offering a wide variety of safe, vibrant, and affordable fireworks that bring joy to every celebration.
           </p>
           <p>
-            Our mission is to combine tradition with innovation, ensuring that every festival is memorable. 
-            Quality and customer satisfaction are at the heart of everything we do.
+            Our deep-rooted expertise, combined with a commitment to quality and customer satisfaction, ensures that each product we deliver adds sparkle and happiness to your special moments. From festivals to weddings and grand occasions, Astro Crackers continues to light up lives with trust, tradition, and brilliance.
           </p>
         </div>
 

@@ -1,0 +1,32 @@
+.home-container {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../assets/Astro_crackers_home_image.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding-bottom: 40px;
+}
+
+.yellow_background{
+  background-color: #FFCB06;
+}
+
+.shop-now-btn {
+  border-radius: 30px;
+  padding: 12px 40px;
+  font-size: 18px;
+}
+
+/* 📱 Mobile view zoom effect */
+@media (max-width: 768px) {
+  .home-container {
+    background-size: 150% auto; /* zooms in */
+    background-position: center; /* keeps focus */
+  }
+}
