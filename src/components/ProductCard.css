@@ -1,0 +1,76 @@
+/* ---------- slick slide helpers ---------- */
+.slick-slide > div {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+/* ---------- product card sizes & layout ---------- */
+.product-card {
+  flex: 1 1 auto;
+  min-width: 160px;   /* prevents collapse */
+  max-width: 260px;
+  width: 100%;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+/* Qty row default (row layout) */
+.qty-row {
+  gap: 6px;
+}
+
+/* small tweaks to input & buttons */
+.qty-input {
+  width: 50px;
+  font-size: 13px;
+  padding: 4px;
+}
+
+/* make the +/- buttons compact */
+.qty-btn {
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ---------- Force column on mobile (hard CSS) ---------- */
+@media (max-width: 576px) {
+  .product-card {
+    min-width: 0;
+    max-width: 96%;
+    width: 96%;
+  }
+
+  /* stack quantity controls vertically */
+  /* .qty-row {
+    flex-direction: column !important;
+    align-items: center;
+    gap: 8px;
+  } */
+
+  .qty-input {
+    width: 80px;
+    max-width: 80px;
+    margin: 0;
+  }
+
+  .qty-btn {
+    width: 44px !important;
+    height: 44px !important;
+  }
+}
+
+/* Remove number arrows */
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
