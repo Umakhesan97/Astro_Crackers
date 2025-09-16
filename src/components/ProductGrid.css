@@ -1,0 +1,62 @@
+/* Container for horizontal scroll */
+.product-slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 16px;
+  padding: 8px 0;
+  scroll-behavior: smooth;
+}
+
+/* Each product card */
+.slider-item {
+  flex: 0 0 25%; /* 4 items per view desktop */
+  scroll-snap-align: start;
+}
+
+/* Responsive breakpoints */
+@media (max-width: 1024px) { .slider-item { flex: 0 0 33.33%; } }
+@media (max-width: 768px) { .slider-item { flex: 0 0 50%; } }
+@media (max-width: 576px) { .slider-item { flex: 0 0 100%; } }
+
+/* Hide scrollbar */
+.product-slider::-webkit-scrollbar { display: none; }
+.product-slider { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* Arrows */
+.slider-wrapper {
+  position: relative;
+}
+
+.slider-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 20;
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  border: none;
+  font-size: 24px; /* bigger arrow */
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.slider-arrow:hover {
+  background: rgba(0,0,0,0.8);
+}
+
+/* Left arrow outside slider */
+.slider-arrow.left {
+  left: -20px; /* negative to appear outside */
+}
+
+/* Right arrow outside slider */
+.slider-arrow.right {
+  right: -20px;
+}

@@ -1,0 +1,62 @@
+.category-card {
+  text-align: center;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  margin: 10px;
+  min-height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.category-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.category-count {
+  color: gray;
+  font-size: 0.9rem;
+}
+
+/* --- Reset arrows to only show icon --- */
+.slick-prev,
+.slick-next {
+  width: auto;
+  height: auto;
+  background: none !important;
+  border-radius: 0;
+  box-shadow: none;
+  z-index: 2;
+}
+
+/* Make arrow icons visible */
+.slick-prev:before,
+.slick-next:before {
+  font-size: 28px;
+  color: black;
+  opacity: 0.75; /* lighter look */
+  transition: opacity 0.2s;
+}
+
+.slick-prev:hover:before,
+.slick-next:hover:before {
+  opacity: 1; /* darker on hover */
+}
+
+/* Keep arrows inside container */
+.container-xxl .slick-prev {
+  left: -20px;
+}
+.container-xxl .slick-next {
+  right: -20px;
+}
+.category-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin: 0 auto 10px;
+}

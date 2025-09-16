@@ -1,0 +1,23 @@
+/* src/components/CartSidebar.css */
+.cart-sidebar {
+  position: fixed;
+  top: 0;
+  right: -100%; /* hidden by default */
+  height: 100%;
+  width: 50%;
+  max-width: 400px;
+  background: #fff;
+  box-shadow: -2px 0 6px rgba(0, 0, 0, 0.3);
+  transition: right 0.3s ease-in-out;
+  z-index: 1050;
+}
+
+.cart-sidebar.open {
+  right: 0;
+}
+
+@media (max-width: 768px) {
+  .cart-sidebar {
+    width: 100%; /* full width on mobile */
+  }
+}
